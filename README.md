@@ -48,3 +48,5 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 `react-svg`: Dependency for Icon component
 
 `styled-components`: Use styled-component for components styles.
+
+`react-helmet`: Change content of your HTML `<head>`
