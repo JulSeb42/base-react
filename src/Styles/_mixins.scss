@@ -129,7 +129,6 @@
 
 @mixin font-size($font-size) {
     font-size: $font-size;
-    line-height: $font-size * 1.4;
 }
 
 @mixin links($color, $hover) {
@@ -216,8 +215,8 @@ $breakpoint-mobile: 600px;
 
 /*============================================================= Dark mode =============================================================*/
 
-@mixin dark() {
-    @media (prefers-color-scheme: dark) {
+@mixin theme($theme) {
+    @media (prefers-color-scheme: $theme) {
         @content;
     }
 }

@@ -2,7 +2,7 @@
 import { Switch as SwitchComponent, Route } from "react-router-dom";
 
 // Pages
-import Home from "../Pages/Home";
+import Home from "../pages/Home";
 
 // Routes
 const Pages = [

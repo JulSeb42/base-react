@@ -1,21 +1,17 @@
 // Packages
-import styled from "styled-components";
+import styled from "styled-components"
 
 // Components
-import Switch from "./Components/Switch";
-import Header from "./Components/Header";
-
-// Styles
-const Wrapper = styled.div``;
+import Switch from "./components/Switch"
+import Header from "./components/layouts/Header"
 
 function App() {
     return (
-        <Wrapper>
+        <>
             <Header />
-
             <Switch />
-        </Wrapper>
-    );
+        </>
+    )
 }
 
-export default App;
+export default App

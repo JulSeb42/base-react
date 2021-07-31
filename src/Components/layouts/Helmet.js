@@ -2,7 +2,7 @@
 import { Helmet } from "react-helmet"
 
 // Data
-import SiteData from "./SiteData"
+import SiteData from "../data/SiteData"
 
 function HelmetMeta(props) {
     return (

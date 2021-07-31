@@ -2,7 +2,7 @@
 import styled from "styled-components";
 
 // Components
-import Helmet from "../Components/Helmet"
+import Helmet from "../components/layouts/Helmet"
 
 function Home() {
     return (
