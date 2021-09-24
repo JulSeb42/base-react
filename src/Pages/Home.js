@@ -1,5 +1,5 @@
 // Packages
-import styled from "styled-components";
+import React from "react"
 
 // Components
 import Helmet from "../components/layouts/Helmet"
@@ -10,7 +10,7 @@ function Home() {
             <Helmet title="Homepage" description="" keywords="" />
             <h1>Homepage</h1>
         </div>
-    );
+    )
 }
 
-export default Home;
+export default Home

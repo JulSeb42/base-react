@@ -1,7 +1,10 @@
-/*=============================================== Reset ===============================================*/
+/* Reset CSS */
 
+/*=============================================== Reset ===============================================*/
 * {
-    @include box-sizing(border-box);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
     outline: none;
 }
 
@@ -84,8 +87,10 @@ time,
 mark,
 audio,
 video {
-    @include paMar();
+    margin: 0;
+    padding: 0;
     border: 0;
+    vertical-align: baseline;
 }
 
 article,
@@ -102,11 +107,22 @@ section {
     display: block;
 }
 
-img {
-    max-width: 100%;
+body {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 table {
     border-collapse: collapse;
     border-spacing: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+button {
+    cursor: pointer;
 }

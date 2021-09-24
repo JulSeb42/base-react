@@ -1,26 +1,24 @@
 // Packages
-import { Link } from "react-router-dom";
-import styled from "styled-components";
+import React from "react"
+import { Link } from "react-router-dom"
+import styled from "styled-components"
 
-const Nav = styled.nav``;
+// Data
+import NavItems from "../data/NavItems"
 
-const Links = [
-    {
-        path: "/",
-        text: "Home",
-    },
-];
+// Styles
+const Nav = styled.nav``
 
 function Header() {
     return (
         <Nav>
-            {Links.map(({ path, text, index }) => (
+            {NavItems.map(({ path, text, index }) => (
                 <Link to={path} key={index}>
                     {text}
                 </Link>
             ))}
         </Nav>
-    );
+    )
 }
 
-export default Header;
+export default Header

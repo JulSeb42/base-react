@@ -1,8 +1,9 @@
 // Packages
-import { Switch as SwitchComponent, Route } from "react-router-dom";
+import React from "react"
+import { Switch as SwitchComponent, Route } from "react-router-dom"
 
 // Pages
-import Home from "../pages/Home";
+import Home from "../pages/Home"
 
 // Routes
 const Pages = [
@@ -11,7 +12,7 @@ const Pages = [
         exact: true,
         component: Home,
     },
-];
+]
 
 function Switch() {
     return (
@@ -20,14 +21,14 @@ function Switch() {
                 <Route
                     path={route.path}
                     exact={route.exact}
-                    render={(props) => (
+                    render={props => (
                         <route.component {...props} routes={route.routes} />
                     )}
                     key={index}
                 />
             ))}
         </SwitchComponent>
-    );
+    )
 }
 
-export default Switch;
+export default Switch

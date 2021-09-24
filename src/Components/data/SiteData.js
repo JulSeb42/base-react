@@ -9,6 +9,6 @@ const SiteData = {
     siteCover: "",
     siteLanguage: "en_EN",
     siteKeywords: [],
-};
+}
 
-export default SiteData;
+export default SiteData

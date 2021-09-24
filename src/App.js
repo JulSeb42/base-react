@@ -1,13 +1,17 @@
 // Packages
-import styled from "styled-components"
+import React from "react"
 
 // Components
-import Switch from "./components/Switch"
 import Header from "./components/layouts/Header"
+import Switch from "./components/Switch"
+
+// Styles
+import GlobalStyles from "./components/styles/GlobalStyles"
 
 function App() {
     return (
         <>
+            <GlobalStyles />
             <Header />
             <Switch />
         </>

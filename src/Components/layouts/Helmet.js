@@ -1,4 +1,5 @@
 // Packages
+import React from "react"
 import { Helmet } from "react-helmet"
 
 // Data
@@ -28,7 +29,7 @@ function HelmetMeta(props) {
             <meta property="og:site_name" content={SiteData.siteTitle} />
             <meta property="og:locale" content={SiteData.siteLanguage} />
         </Helmet>
-    );
+    )
 }
 
-export default HelmetMeta;
+export default HelmetMeta
