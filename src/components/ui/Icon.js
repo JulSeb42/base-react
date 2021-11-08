@@ -15,17 +15,7 @@ const IconStyled = styled(ReactSVG)`
     }
 
     path {
-        ${props =>
-            props.var &&
-            css`
-                fill: ${props => `var(--${props.color})`};
-            `}
-
-        ${props =>
-            !props.var &&
-            css`
-                fill: ${props => props.color};
-            `}
+        fill: ${props => props.color};
     }
 `
 

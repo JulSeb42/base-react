@@ -3,10 +3,10 @@ import React from "react"
 import ReactDOM from "react-dom"
 import { BrowserRouter as Router } from "react-router-dom"
 
-// App
+// Components
 import App from "./App"
 
-// Style
+// Base styles
 import "./styles/style.css"
 
 ReactDOM.render(

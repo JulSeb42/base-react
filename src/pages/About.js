@@ -4,12 +4,12 @@ import React from "react"
 // Components
 import Page from "../components/layouts/Page"
 
-function Home() {
+function About() {
     return (
-        <Page title="Homepage" description="" keywords="">
-            <h1>Homepage</h1>
+        <Page title="About" description="" keywords="">
+            <h1>About page</h1>
         </Page>
     )
 }
 
-export default Home
+export default About

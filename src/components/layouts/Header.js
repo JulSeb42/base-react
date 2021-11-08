@@ -7,17 +7,17 @@ import styled from "styled-components"
 import NavItems from "../data/NavItems"
 
 // Styles
-const Nav = styled.nav``
+const Container = styled.header``
 
 function Header() {
     return (
-        <Nav>
-            {NavItems.map(({ path, text, index }) => (
-                <Link to={path} key={index}>
-                    {text}
+        <Container>
+            {NavItems.map((item, i) => (
+                <Link to={item.path} key={i}>
+                    {item.text}
                 </Link>
             ))}
-        </Nav>
+        </Container>
     )
 }
 

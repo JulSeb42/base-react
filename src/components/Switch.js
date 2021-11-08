@@ -1,9 +1,10 @@
 // Packages
 import React from "react"
-import { Switch as SwitchComponent, Route } from "react-router-dom"
+import { Routes, Route } from "react-router-dom"
 
 // Pages
 import Home from "../pages/Home"
+import About from "../pages/About"
 
 // Routes
 const Pages = [
@@ -12,22 +13,25 @@ const Pages = [
         exact: true,
         component: Home,
     },
+
+    {
+        path: "/about",
+        component: About,
+    },
 ]
 
 function Switch() {
     return (
-        <SwitchComponent>
+        <Routes>
             {Pages.map((route, index) => (
                 <Route
                     path={route.path}
                     exact={route.exact}
-                    render={props => (
-                        <route.component {...props} routes={route.routes} />
-                    )}
+                    element={<route.component />}
                     key={index}
                 />
             ))}
-        </SwitchComponent>
+        </Routes>
     )
 }
 

@@ -1,14 +1,16 @@
 const SiteData = {
-    siteName: "Site Name",
-    siteEmail: "",
-    siteAuthor: "",
-    siteYear: "2021",
+    Name: "Site name",
+    Description: "",
+    Favicon: "",
+    Email: "",
+    Author: "",
+    Year: "",
 
     // Metadata
-    siteType: "",
-    siteCover: "",
-    siteLanguage: "en_EN",
-    siteKeywords: [],
+    Cover: "",
+    Type: "",
+    Language: "en_EN",
+    Keywords: []
 }
 
 export default SiteData
