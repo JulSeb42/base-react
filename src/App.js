@@ -1,20 +1,17 @@
 // Packages
 import React from "react"
+import { Routes, Route } from "react-router-dom"
 
-// Components
-import Header from "./components/layouts/Header"
-import Switch from "./components/Switch"
+// Routes
+import routes from "./routes/routes"
 
-// Styles
-import GlobalStyles from "./components/styles/GlobalStyles"
-
-function App() {
+const App = () => {
     return (
-        <>
-            <GlobalStyles />
-            <Header />
-            <Switch />
-        </>
+        <Routes>
+            {routes.map((route, i) => (
+                <Route path={route.path} element={<route.element />} key={i} />
+            ))}
+        </Routes>
     )
 }
 
