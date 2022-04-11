@@ -1,6 +1,6 @@
 // Packages
 import React from "react"
-import ReactDOM from "react-dom"
+import { createRoot } from "react-dom/client"
 import { BrowserRouter } from "react-router-dom"
 
 // Components
@@ -12,14 +12,15 @@ import reportWebVitals from "./tests/reportWebVitals"
 // Styles
 import "components-react-julseb/dist/components/index.css"
 import "./styles/root.css"
+// )
+const root = createRoot(document.getElementById("root"))
 
-ReactDOM.render(
+root.render(
     <React.StrictMode>
         <BrowserRouter>
             <App />
         </BrowserRouter>
-    </React.StrictMode>,
-    document.getElementById("root")
+    </React.StrictMode>
 )
 
 // If you want to start measuring performance in your app, pass a function

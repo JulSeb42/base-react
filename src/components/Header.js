@@ -68,7 +68,7 @@ const Nav = styled.nav`
         align-items: flex-start;
         left: 0;
         width: 100%;
-        top: -200px;
+        top: ${props => (props.open ? "56px" : "-200px")};
         padding: ${Variables.Spacers.XS} 5vw;
         z-index: 999;
         background-color: ${Variables.Colors.White};
@@ -78,12 +78,6 @@ const Nav = styled.nav`
             margin-right: 0;
             margin-bottom: ${Variables.Spacers.XS};
         }
-
-        ${props =>
-            props.open &&
-            css`
-                top: 56px;
-            `}
     }
 `
 
