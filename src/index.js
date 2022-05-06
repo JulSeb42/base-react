@@ -10,9 +10,9 @@ import App from "./App"
 import reportWebVitals from "./tests/reportWebVitals"
 
 // Styles
-import "components-react-julseb/dist/components/index.css"
+import "tsx-library-julseb/index.css"
 import "./styles/root.css"
-// )
+
 const root = createRoot(document.getElementById("root"))
 
 root.render(

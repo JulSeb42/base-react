@@ -1,13 +1,8 @@
 // Packages
-import React, { useState } from "react"
-import { Link, NavLink } from "react-router-dom"
-import styled, { css } from "styled-components"
-import { Burger, Variables } from "components-react-julseb"
+import styled from "@emotion/styled"
+import { css } from "@emotion/react"
+import { Burger, Variables } from "tsx-library-julseb"
 
-// Data
-import siteData from "../data/siteData"
-
-// Styles
 const Container = styled.header`
     width: 100%;
     display: flex;
@@ -17,7 +12,7 @@ const Container = styled.header`
     position: relative;
 `
 
-const NavItem = styled(NavLink)`
+const NavItem = styled.span`
     text-decoration: none;
     color: ${Variables.Colors.Primary500};
     transition: ${Variables.Transitions.Short};
@@ -58,7 +53,7 @@ const Nav = styled.nav`
     display: flex;
     align-items: center;
 
-    & > *:not(:last-child) {
+    & > *:not(:last-of-type) {
         margin-right: ${Variables.Spacers.M};
     }
 
@@ -74,35 +69,11 @@ const Nav = styled.nav`
         background-color: ${Variables.Colors.White};
         transition: ${Variables.Transitions.Short};
 
-        & > *:not(:last-child) {
+        & > *:not(:last-of-type) {
             margin-right: 0;
             margin-bottom: ${Variables.Spacers.XS};
         }
     }
 `
 
-const Header = () => {
-    const [isOpen, setIsOpen] = useState(false)
-
-    return (
-        <Container>
-            <NavItem as={Link} to="/" logo>
-                {siteData.name}
-            </NavItem>
-
-            <MenuButton
-                width={28}
-                height={20}
-                onClick={() => setIsOpen(!isOpen)}
-                color="currentColor"
-                open={isOpen}
-            />
-
-            <Nav open={isOpen}>
-                <NavItem to="/">Homepage</NavItem>
-            </Nav>
-        </Container>
-    )
-}
-
-export default Header
+export { Container, NavItem, MenuButton, Nav }
